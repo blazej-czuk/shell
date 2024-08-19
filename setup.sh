@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euEo pipefail
 
-# ZSH pplugin setup
+# ZSH plugin setup
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 grep -q "zsh-syntax-highlighting" ~/.zshrc || sed -i '/^plugins=/ s/)/ zsh-syntax-highlighting)/' ~/.zshrc
 
